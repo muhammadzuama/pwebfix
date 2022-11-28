@@ -1,8 +1,9 @@
 <?php
 session_start();
 require_once "funtionmin.php";
-// $result= mysqli_query($connection,"SELECT * FROM city JOIN hospital USING(city_id) JOIN daftars_ USING (rs_id) WHERE daftar_id = '".$_SESSION["id"]."' ");
-$result= mysqli_query($connection,"SELECT * FROM city JOIN hospital USING(city_id) JOIN daftars_ USING (rs_id) WHERE daftar_id = '1' ");
+$result= mysqli_query($connection,"SELECT * FROM city JOIN hospital USING(city_id) JOIN daftars_ USING (rs_id) WHERE daftar_id = '".$_SESSION["id"]."' ");
+$_SESSION
+// $result= mysqli_query($connection,"SELECT * FROM city JOIN hospital USING(city_id) JOIN daftars_ USING (rs_id) WHERE daftar_id = '".$_SESSION["id"]." ");
 ?>
 <!DOCTYPE html>
 <html lang="en">

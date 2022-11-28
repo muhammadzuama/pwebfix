@@ -1,12 +1,11 @@
 <?php
 session_start();
 require_once "register/getfuntion.php";
-// if(isset($_COOKIE['id']) && isset($_COOKIE['key'])){
-//     $id=$_COOKIE['id'];
-//     $key=$_COOKIE['key'];
+if(isset($_COOKIE['id']) && isset($_COOKIE['key'])){
+    $id=$_COOKIE['id'];
+    $key=$_COOKIE['key'];
 
-//     $result
-// }
+}
 
 if(isset($_POST["login"]))
 {
